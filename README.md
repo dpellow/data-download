@@ -3,9 +3,9 @@
 ### Download bacterial references and PLSDB database
 `scripts/download_script.sh` - script to download NCBI bacteria and Archaea references. Also concatenates all references into all_bacteria.fasta / all_archaea.fasta files. Warning: This database is large.
 
-`scripts/download_plsdb.sh` - script to download and extract the PLSDB plasmid sequences
+`scripts/download_plsdb.sh` - script to download and extract the PLSDB plasmid sequences. Note: need to edit the file to change the path to the BLAST+ executables to match your system.
 
-each script should be run in the directory where you would like to download the files
+Each script should be run in the directory where you would like to download the files
 
 ### Split bacterial reference database into genomes and plasmids
 `scripts/filter_plasmids_from_genomes.py` - script to create plasmid and genome fastas given single fasta input file
