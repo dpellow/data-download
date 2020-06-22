@@ -40,4 +40,6 @@ done
 gunzip bacteria/*.gz
 gunzip archaea/*.gz
 
+cat bacteria/*.fna > bacteria/all_bac.fasta
+cat archaea/*.fna > archaea/all_archaea.fasta
 
