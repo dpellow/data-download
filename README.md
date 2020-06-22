@@ -2,7 +2,7 @@
 
 ### Download bacterial references and PLSDB database
 
-`scripts/download_script.sh` - script to download NCBI bacteria and Archaea references
+`scripts/download_script.sh` - script to download NCBI bacteria and Archaea references. WARNING: This database is large.
 
 `scripts/download_plsdb.sh` - script to download and extract the PLSDB plasmid sequences
 
