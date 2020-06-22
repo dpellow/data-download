@@ -37,11 +37,8 @@ def readfq(fp): # this is a generator function
                 yield name, seq, None # yield a fasta record instead
                 break
 
-
-
-
-
-  
-  
-
-  
+def get_rc(seq):
+    ''' Return the reverse complement of seq
+    '''
+    rev = reversed(seq)
+    return "".join([complements.get(i,i) for i in rev])
