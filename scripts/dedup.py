@@ -48,10 +48,11 @@ def dedup(infile,outfile):
             removed_set.add(j)
 
     print("{} duplicates removed".format(len(removed_set)))
+
     with open (outfile,'w+') as o:
       for i in range(len(seqs)):
         if i not in removed_set:
-          o.write(headers[i]+'\n')
+          o.write('>'+headers[i]+'\n')
           o.write(seqs[i]+'\n\n')
 
 
