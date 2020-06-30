@@ -40,12 +40,12 @@ def dedup(infile,outfile):
         if j in removed_set: continue
         if targetlen == seq_lens[j]:
             query = seqs[j]
-       	r_query = query[::-1]
-    	comp = complement(query)
-    	rc = comp[::-1]
-    	if query in doubled_seq or r_query in doubled_seq or comp in doubled_seq or rc in doubled_seq:
-            print("{} is the same as {}".format(headers[i],headers[j]))
-            removed_set.add(j)
+       	    r_query = query[::-1]
+    	    comp = complement(query)
+    	    rc = comp[::-1]
+    	    if query in doubled_seq or r_query in doubled_seq or comp in doubled_seq or rc in doubled_seq:
+                 print("{} is the same as {}".format(headers[i],headers[j]))
+                 removed_set.add(j)
 
     print("{} duplicates removed".format(len(removed_set)))
 

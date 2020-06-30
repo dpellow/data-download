@@ -42,3 +42,7 @@ def get_rc(seq):
     '''
     rev = reversed(seq)
     return "".join([complements.get(i,i) for i in rev])
+
+def complement(seq):
+  comp_dict = {"A":"T", "C":"G", "T":"A", "G":"C"}
+  return "".join(comp_dict.get(b,b) for b in seq)
